@@ -65,7 +65,7 @@ return {
         desc = "Find Plugin File",
       },
       {
-        ";f",
+        "ff",
         function()
           local builtin = require("telescope.builtin")
           builtin.find_files({
@@ -76,7 +76,7 @@ return {
         desc = "Lists files in your current working directory, respects .gitignore",
       },
       {
-        ";r",
+        "fl",
         function()
           local builtin = require("telescope.builtin")
           builtin.live_grep()
@@ -84,7 +84,47 @@ return {
         desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
       },
       {
-        "\\\\",
+        "fs",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.grep_string()
+        end,
+        desc = "Find word under cursor",
+      },
+      {
+        "fc",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.commands()
+        end,
+        desc = "Find commands",
+      },
+      {
+        "fk",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.keymaps()
+        end,
+        desc = "Find keymaps",
+      },
+      {
+        "fm",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.man_pages()
+        end,
+        desc = "Find man",
+      },
+      {
+        "fo",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.oldfiles()
+        end,
+        desc = "Find history",
+      },
+      {
+        "fb",
         function()
           local builtin = require("telescope.builtin")
           builtin.buffers()
@@ -92,7 +132,15 @@ return {
         desc = "Lists open buffers",
       },
       {
-        ";t",
+        "fr",
+        function()
+          local builtin = require("telescope.builtin")
+          builtin.registers()
+        end,
+        desc = "Find registers",
+      },
+      {
+        "ft",
         function()
           local builtin = require("telescope.builtin")
           builtin.help_tags()
@@ -108,7 +156,7 @@ return {
         desc = "Resume the previous telescope picker",
       },
       {
-        ";e",
+        "fd",
         function()
           local builtin = require("telescope.builtin")
           builtin.diagnostics()
@@ -116,7 +164,7 @@ return {
         desc = "Lists Diagnostics for all open buffers or a specific buffer",
       },
       {
-        ";s",
+        "ft",
         function()
           local builtin = require("telescope.builtin")
           builtin.treesitter()
