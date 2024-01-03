@@ -5,7 +5,8 @@ vim.g.mapleader = " "
 
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
-vim.opt.fileencoding = "utf-8"
+-- vim.opt.fileencoding = "utf-8"
+vim.opt.fencs = { "cp949", "utf-8", "ucs-bom" }
 
 vim.opt.number = true
 
