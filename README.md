@@ -1,14 +1,22 @@
 # pisces-lazyvim  
+
+```
 wsl 
 -------------------------------------------------  
+rm -rf ~/.config/nvim
 git clone https://github.com/chillin2/pisces-lazyvim.git ~/.config/nvim
+```
 
+```
 windows powershell 
 -------------------------------------------------  
-git clone https://github.com/chillin2/pisces-lazyvim.git ~/.AppData/Local/nvim
+Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force
+git clone https://github.com/chillin2/pisces-lazyvim.git $env:LOCALAPPDATA\nvim
+```
 
 ## Requirement  
 neovim  
+node 18.x  
 fish shell ( User friendly interactive shell )  
 fisher ( Plugin manager for Fish )  
 shellder ( Shell theme )  
