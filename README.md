@@ -1,15 +1,15 @@
 # pisces-lazyvim  
 
-```
 wsl 
 -------------------------------------------------  
+```
 rm -rf ~/.config/nvim
 git clone https://github.com/chillin2/pisces-lazyvim.git ~/.config/nvim
 ```
 
-```
 windows powershell 
 -------------------------------------------------  
+```
 Remove-Item $env:LOCALAPPDATA\nvim -Recurse -Force
 git clone https://github.com/chillin2/pisces-lazyvim.git $env:LOCALAPPDATA\nvim
 ```
